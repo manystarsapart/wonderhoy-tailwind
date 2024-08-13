@@ -20,12 +20,14 @@ module.exports = {
       'gray-light': '#d3dce6',
       'black': '#000000',
       'white': '#ffffff',
+      'wonderhoyyellow': '#ffc265',
 
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
       moontime: ["Moontime", "serif"],
+      imfellenglish: ["IM Fell English", "serif"],
     },
     extend: {
       spacing: {
@@ -37,6 +39,10 @@ module.exports = {
       },
       colors: {
         'sage':'#94b890',
+      },
+      zIndex: {
+        'top':'100000',
+        'bottom':'-100000',
       }
     },
   plugins: [],

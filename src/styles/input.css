@@ -6,3 +6,8 @@
     font-family: "Moontime";
     src: url("../../assets/fonts/MoonTime-Regular.ttf");
   }
+
+  @font-face {
+    font-family: "IM Fell English";
+    src: url("../../assets/fonts/IMFellEnglishSC-Regular.ttf");
+  }

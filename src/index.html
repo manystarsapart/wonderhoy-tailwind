@@ -8,34 +8,40 @@
 		<link rel="icon" type="image/png" href="../assets/images/emu.png"/>
 	</head>
 	<body>
-		<nav class="bg-gradient-to-r from-purple to-pink flex flex-row items-center p-4 gap-8">
-			<a href="#" class=" hover:bg-purple">Home</a>
-			<div class="group relative inline-block">
-				<button class="text-black font-semibold flex-initial">
+		<!-- background image -->
+		<div>
+			<img class="absolute z-bottom w-screen" src="../assets/images/night-street-sakura-short.gif">
+		</div>
+
+		<!-- navbar -->
+		<nav class="bg-gradient-to-r from-white to-transparent flex flex-row items-center p-4 gap-8 z-top">
+			<a href="#" class="font-imfellenglish text-xl z-top">Home</a>
+			<div class="group relative inline-block z-top">
+				<button class="font-imfellenglish text-xl text-black font-semibold flex-initial z-top">
 					Menu
 					<svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
 					</svg>
 				</button>
 			
-				<div class="absolute hidden group-hover:block p-2 leading-8">
-					<a href="https://www.wonderhoy.com/pages/about" class=" hover:bg-gray">About</a>
-					<a href="https://www.wonderhoy.com/pages/contact" class=" hover:bg-gray">Contact</a>
-					<a href="https://www.wonderhoy.com/pages/updates" class=" hover:bg-gray">Updates</a>
+				<div class="absolute hidden group-hover:block leading-8 z-top bg-white">
+					<a href="pages/about.html" class="font-imfellenglish text-xl block px-10 py-4 hover:bg-gray-light z-top">About</a>
+					<a href="pages/contact.html" class="font-imfellenglish text-xl block px-10 py-4 hover:bg-gray-light z-top">Contact</a>
+					<a href="pages/updates.html" class="font-imfellenglish text-xl block px-10 py-4 hover:bg-gray-light z-top">Updates</a>
 				</div>
 			</div>
 		</nav>
 
+		<!-- wonderhoy caligraphy text -->
+		<div>
+			<h1 class="absolute p-5 z-top bottom-10 left-20 font-moontime text-[15rem] text-wonderhoyyellow">wonderhoy.</h1>
 
+			<a class="absolute bottom-1/4 left-1/2 z-top text-white font-moontime text-6xl" href="./pages/about.html">
+				<button id="nav-button">More ></button>
+			</a>
+		</div>
 		
-
-		<h1 class="absolute p-5 bottom-10 left-20 font-moontime text-[15rem]">wonderhoy.</h1>
-
-		<img class="absolute -z-1" src="../assets/images/night-street-sakura-short.gif">
-
-		<a id="nav-button-anchor" href="./pages/about.html">
-			<button id="nav-button">More ></button>
-		</a>
+		
 		
 
 
