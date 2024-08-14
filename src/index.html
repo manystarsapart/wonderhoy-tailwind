@@ -6,12 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./styles/output.css">
 		<link rel="icon" type="image/png" href="../assets/images/emu.png"/>
+		<!-- NOTE: Background Art Credits: Waneella @ https://www.waneella.com/ -->
 	</head>
 	<body>
 		<!-- background image -->
-		<div>
-			<img class="absolute z-bottom w-screen" src="../assets/images/night-street-sakura-short.gif">
+		<div class="relative">
+			<img class="absolute object-cover z-bottom w-full md:hidden" src="../assets/images/background/mobile/index-mobile.gif" alt="mobile / default background">
+			<img class="absolute object-cover z-bottom w-full hidden md:block" src="../assets/images/background/index.gif" alt="widescreen background">
 		</div>
+			
 
 		<!-- navbar -->
 		<nav class="bg-gradient-to-br from-white to-transparent flex flex-row items-center p-4 gap-8 z-top">
@@ -27,7 +30,8 @@
 				<div class="font-imfellenglish absolute hidden group-hover:block leading-8 z-top bg-white">
 					<a href="./pages/about.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">About</a>
 					<a href="./pages/contact.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Contact</a>
-					<a href="./updates.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Updates</a>
+					<a href="./pages/timeline.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Timeline</a>
+					<a href="./pages/updates.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Updates</a>
 				</div>
 			</div>
 		</nav>

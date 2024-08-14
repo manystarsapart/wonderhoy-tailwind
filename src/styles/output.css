@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Graphik, sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -614,8 +614,8 @@ video {
   width: 1rem;
 }
 
-.w-screen {
-  width: 100vw;
+.w-full {
+  width: 100%;
 }
 
 .flex-initial {
@@ -644,13 +644,30 @@ video {
 }
 
 .from-white {
-  --tw-gradient-from: #ffffff var(--tw-gradient-from-position);
+  --tw-gradient-from: #fff var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-sage {
+  --tw-gradient-from: #94b890 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(148 184 144 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-wonderhoyyellow {
+  --tw-gradient-from: #ffc265 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 194 101 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-4 {
@@ -693,10 +710,6 @@ video {
   line-height: 1.75rem;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .leading-8 {
   line-height: 2rem;
 }
@@ -728,11 +741,16 @@ video {
   src: url("../../assets/fonts/IMFellEnglishSC-Regular.ttf");
 }
 
-.hover\:bg-gray-light:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(211 220 230 / var(--tw-bg-opacity));
-}
-
 .group:hover .group-hover\:block {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
 }
