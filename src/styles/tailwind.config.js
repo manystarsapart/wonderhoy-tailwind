@@ -163,6 +163,7 @@ module.exports = {
         'wonderhoyyellow': '#ffc265',
         'sage':'#94b890',
         'contactcolor':'#291c11',
+        'updatescolor':'#7c9896',
 
       }),
       columns: {
