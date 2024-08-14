@@ -10,14 +10,15 @@
 	</head>
 	<body>
 		<!-- background image -->
-		<div class="relative">
-			<img class="absolute object-cover z-bottom w-full md:hidden" src="../assets/images/background/mobile/index-mobile.gif" alt="mobile / default background">
-			<img class="absolute object-cover z-bottom w-full hidden md:block" src="../assets/images/background/index.gif" alt="widescreen background">
-		</div>
+		<!-- <div class="relative"> -->
+			<!-- <img class="absolute object-cover z-bottom w-full md:hidden" src="../assets/images/background/mobile/index-mobile.gif" alt="mobile / default background"> -->
+			<!-- <img id="scrolling-gif" class="absolute object-cover z-bottom w-full block" src="../assets/images/background/index.gif" alt="widescreen background"> -->
+		<!-- </div> -->
 			
+		<img id="scrolling-gif" class="w-full h-auto absolute z-bottom block" src="../assets/images/background/index.gif">
 
 		<!-- navbar -->
-		<nav class="bg-gradient-to-br from-white to-transparent flex flex-row items-center p-4 gap-8 z-top">
+		<nav class="bg-gradient-to-br from-white to-transparent flex flex-row items-center p-4 gap-8 z-top fixed top-0 left-0 w-full">
 			<a href="#" class="font-imfellenglish text-xl z-top">Home</a>
 			<div class="group relative inline-block z-top">
 				<button class="font-imfellenglish text-xl text-black flex-initial z-top">
@@ -36,14 +37,16 @@
 			</div>
 		</nav>
 
-		<!-- wonderhoy caligraphy text -->
-		<div>
-			<h1 class="absolute p-5 z-top bottom-10 left-20 font-moontime text-[15rem] text-wonderhoyyellow">wonderhoy.</h1>
 
-			<a class="absolute bottom-1/4 left-1/2 z-top text-white font-moontime text-6xl" href="./pages/about.html">
-				<button id="nav-button">More ></button>
-			</a>
-		</div>
+		<script src="./scripts/index.js"></script>
+
+
+		<!-- wonderhoy caligraphy text -->
+		<h1 id="wonderhoy" class="absolute p-5 z-top bottom-10 left-20 font-moontime text-[15rem] text-wonderhoyyellow">wonderhoy.</h1>
+
+		<button id="more-button" class="absolute bottom-1/4 left-1/2 z-top text-white font-moontime text-6xl">More ></button>
+
+		
 		
 		
 		
