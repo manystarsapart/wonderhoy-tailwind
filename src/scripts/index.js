@@ -1,10 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    let scrollingGif;
+    
     if (window.screen.width < 600) {
-        
+        scrollingGif = document.getElementById('scrolling-gif-mobile');
+    } else {
+        scrollingGif = document.getElementById('scrolling-gif');
     }
 
-    const scrollingGif = document.getElementById('scrolling-gif');
+    scrollingGif.classList.add('block');
+    scrollingGif.classList.remove('hidden');
+    
     const moreButton = document.getElementById('more-button');
 
     let isScrolling = false;
