@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-    content: ["../*.{html,js}"],
+    content: ["../*.{html,js}","../pages/*.{html,js}"],
     presets: [],
-    darkMode: 'media', // or 'class'
+    darkMode: 'class', // or 'media' if we want it to be auto (according to user settings)
     theme: {
       accentColor: ({ theme }) => ({
         ...theme('colors'),
@@ -162,7 +162,7 @@ module.exports = {
         rose: colors.rose,
         'wonderhoyyellow': '#ffc265',
         'sage':'#94b890',
-        'contactcolor':'#291C11',
+        'contactcolor':'#291c11',
 
       }),
       columns: {
