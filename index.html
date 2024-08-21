@@ -4,8 +4,8 @@
 		<title>Wonderhoy!</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="./styles/output.css">
-		<link rel="icon" type="image/png" href="../assets/images/emu.png"/>
+		<link rel="stylesheet" href="./src/styles/output.css">
+		<link rel="icon" type="image/png" href="./assets/images/emu.png"/>
 		<!-- NOTE: Background Art Credits: Waneella @ https://www.waneella.com/ -->
 	</head>
 	<body>
@@ -15,8 +15,8 @@
 			<!-- <img id="scrolling-gif" class="absolute object-cover z-bottom w-full block" src="../assets/images/background/index.gif" alt="widescreen background"> -->
 		<!-- </div> -->
 			
-		<img id="scrolling-gif" class="w-full h-auto absolute z-bottom block" src="../assets/images/background/index.gif">
-		<img id="scrolling-gif-mobile" class="w-full h-auto absolute z-bottom block" src="../assets/images/background/mobile/index-mobile.gif">
+		<img id="scrolling-gif" class="w-full h-auto absolute z-bottom block" src="./assets/images/background/index.gif">
+		<img id="scrolling-gif-mobile" class="w-full h-auto absolute z-bottom block" src="./assets/images/background/mobile/index-mobile.gif">
 
 		<!-- navbar -->
 		<nav class="bg-gradient-to-br from-white to-transparent flex flex-row items-center p-4 gap-8 z-top fixed top-0 left-0 w-full">
@@ -30,16 +30,16 @@
 				</button>
 
 				<div class="font-imfellenglish absolute hidden group-hover:block leading-8 z-top bg-white">
-					<a href="./pages/about.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">About</a>
-					<a href="./pages/contact.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Contact</a>
-					<a href="./pages/timeline.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Timeline</a>
-					<a href="./pages/updates.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Updates</a>
+					<a href="./public/about.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">About</a>
+					<a href="./public/contact.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Contact</a>
+					<a href="./public/timeline.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Timeline</a>
+					<a href="./public/updates.html" class="text-xl block px-10 py-4 hover:bg-gray-light z-top">Updates</a>
 				</div>
 			</div>
 		</nav>
 
 
-		<script src="./scripts/index.js"></script>
+		<script src="./src/scripts/index.js"></script>
 
 
 		<!-- wonderhoy caligraphy text -->
@@ -60,7 +60,7 @@
 			<!-- THIS DIV IS NOT DISPLAYED!!! FIGURE OUT HOW TO DISPLAY IT BELOW THE SCROLL -->
 			<div class="flex-container">
 				<div style="flex:1">
-					<img class="responsive-image" src="../assets/emu.png">
+					<img class="responsive-image" src="./assets/emu.png">
 				</div>
 				<div class="quote" style="flex:3">
 					"Be like a rocky promontory against which the restless surf continually pounds. <br />
